@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bountiful foods</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development - Bountiful Food Home Page">
+    <meta name="author" content="Gloria Ekpo">
+    <!-- social media meta tags for facebook -->
+    <meta property="og:url" content="https://gloria-ekpo.github.io/wdd230/bountiful/index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="WDD 230 - Bountiful Foods">
+    <meta property="og:description"
+        content="WDD 230 - Web Frontend Development - Bountiful Project Home Page">
+    <meta property="og:image" content="https://gloria-ekpo.github.io/wdd230/bountiful/images/favicon.ico">
+    <!-- favicon -->
+    <link rel="icon" href="images/favicon.ico">
+    <!-- css normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- media query -->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/scripts.js" defer></script>
+    <script src="scripts/forecast.js" defer></script>
+    <script src="./scripts/drink-count.js" defer></script>
+</head> 
+
+<body>
+    <header>
+        <div class="logo">
+        <img src="./images/Fruit-Logo.png" height="160" width="160" alt="Bountiful Logo" >
+        </div>
+        <nav>
+        <button class="menu-hide">X</button>
+        <button class="menu-show showing">&equiv;</button>
+        <ul id="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="order.html">Order</a></li>
+        </ul>
+        </nav>
+    </header>
+
+    <main id="index-main">
+       <div class="hero">
+          <div class="hero-container">
+            <picture>
+              <source srcset="images/small-hero.png" media="(max-width:560px)" />
+              <source
+                srcset="images/medium-hero.png"
+                media="(max-width:1200px)"
+              />
+              <img src="images//large-hero.png" alt="Bountiful hero image" />
+            </picture>
+            <form method="get" action="order.html">
+             <button id="order-button">Order your smoothie now!</button>
+            </form>
+
+          </div>
+        </div>
+
+        <h1>Bountiful Foods</h1>
+
+                               
+                    <!-- Drink Count Section -->
+          <section id="drink-count">
+            <div class="container">
+              <h2>Number of Specialty Drinks Ordered</h2>
+              <div class="drink-count-content">
+                <p id="order-count">0</p> 
+              </div>
+            </div>
+          </section>
+           <!-- About Section -->
+           <section id="carlsbad-california" class="calsbald">       
+            <div class="container">
+            <h2>Carlsbad, California</h2>
+            <div class="about-content">
+             <img src="images/calsbad.webp" alt="Image of a beach in carlsbad">
+             <p>
+          Carlsbad is a coastal city located in the North County region of San Diego County, California. 
+          It is situated 87 miles south of downtown Los Angeles and 35 miles north of downtown San Diego. 
+          As of the 2020 census, the city had a population of 114,746. Carlsbad is known for its beautiful beaches, 
+          shopping, dining, and much more. It lies along a lagoon on the Pacific Ocean just south of Oceanside, in a winter vegetable- 
+          and flower-growing district. The city was named after a famous spa in Karlsbad, Bohemia. The city's history began with the Luiseño people, 
+          as well as some Kumeyaay in the La Costa area. Today, Carlsbad is a popular tourist destination and home to many businesses in the golf industry. 
+          It truly is a gem on the southern California coast.
+             </p>
+                </div>
+                    </div>
+        </section>
+        <section id="weather" class="index-section">
+            <section id="current-weather">
+              <h2>Weather in Carlsbad</h2> 
+              <img src="https://openweathermap.org/img/wn/01d@4x.png" alt="Weather Icon" id="weather-icon" />
+              <p id="w-description">Description</p>
+              <p>Temperature: <span id="temp-span"></span></p>
+              <p>Humidity: <span id="humid-span"></span></p>
+            </section>
+            <h2>3 Days Forecast @9:00 AM</h2>
+            <section id="forecastSection">
+                
+            </section>
+          </section>
+
+ 
+<!-- Reviews Section -->
+<section id="reviews">
+  <div class="container">
+    <h2>Reviews</h2>
+    <div class="reviews-content">
+      <!-- Review Card 1 -->
+      <div class="review-card">
+        <img src="./images/smoothie-review.webp" alt="Image of a person reviewing a drink">
+        <p>
+          "Bountiful Foods is our go-to place for a quick, healthy snack. Their fruit drinks are not only delicious, 
+          but also packed with nutrients. We love that they use locally sourced, organic fruits. It's a great way to support local farmers 
+          while enjoying a refreshing drink. Keep up the good work, Bountiful Foods!" - The Johnson's
+        </p>
+      </div>
+      <!-- Review Card 2 -->
+      <div class="review-card">
+        <img src="./images/review2.webp" alt="Image of another person reviewing a drink">
+        <p>
+          "I absolutely love the fresh fruit drinks from Bountiful Foods! The quality of the 
+          fruits is top-notch, and you can really taste the difference. My favorite is the strawberry-banana smoothie –
+           it's the perfect balance of sweet and tangy. Plus, the staff is always friendly and helpful. I highly recommend Bountiful Foods to anyone looking for a healthy, delicious treat!" - Annabel
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+              
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="./images/Fruit-Logo.png" alt="mylogo" width="70">
+            </div>
+            <div class="footer-contact">
+                <h4>Bountiful Foods</h4>
+                <p>6669 Peregrine PI<br>Carlsbad, CA 92011</p>
+                <p><a href="bountiful@gmail.com">info@BountifulFoods.org</a></p>
+                <p>650-316-0671</p>
+                <p>Resources:
+                  <a href="https://www.fruityvice.com/">www.fruityvice.com</a>, <a href="https://openweathermap.org/">openweathermap.org</a>
+            </div>
+            <div class="social-media">
+              <a href="images/facebook.png"><img src="images/facebook.png" alt="Facebook Logo"></a>
+              <a href="images/twitter.png"><img src="images/twitter.png" alt="Twitter Logo"></a>
+              <a href="images/instagram-icon.webp"><img src="images/instagram-icon.webp" alt="Instagram Logo"></a>
+          </div>
+        </div>
+        <div class="footer-base">
+            <p>© <span id="currentyear">2023</span> | Gloria Ekpo | Final Project WDD 230 | Last Modified <span id="dateModified"></span>
+          </p>
+    
+        </div>
+    </footer>
+</body>
+</html>

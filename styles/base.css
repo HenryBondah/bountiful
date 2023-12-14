@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=Libre+Baskerville&display=swap');
+@media screen and (max-width: 768px) {
+  .hero img {
+      max-height: 100%; /* Adjust the maximum height for smaller screens */
+  }
+
+  #order-button {
+      bottom: 50%;
+      right: 50%;
+      transform: translate(50%, 50%);
+      margin: 0;
+  }
+  .form-container {
+    margin-top: 20px; /* Add margin as needed */
+}
+
+#order-drink {
+    max-width: 100%;
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#order-drink {
+    max-width: 400px; /* Adjust the maximum width as needed */
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Style for form labels and inputs */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+/* Style for submit button */
+#submit {
+    background-color: #FFA500;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+}
+  @media screen and (max-width: 768px) {
+    .hero img {
+        height: auto;
+    }
+
+    #order-button {
+        bottom: 50%;
+        right: 50%;
+        transform: translate(50%, 50%);
+        margin: 0;
+    }
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1200px;
+  font-family: 'Libre Baskerville', serif;
+  background-color: #F7FFF7; 
+}
+#index-main{
+  margin-top: 20px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+}
+
+.hero img {
+  width: 100%;
+  max-width: 100%;
+  max-height: 400px; /* Adjust the maximum height as needed */
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.hero-container {
+    position: relative;
+}
+#order-button {
+  position: absolute;
+  bottom: 50%;
+  right: 50%;
+  transform: translate(50%, 50%);
+  background-color: #FFA500;
+  font-size: 2rem;
+  border: none;
+  border-radius: 50px;
+  z-index: 1; /* Set a higher z-index to ensure it appears above other elements */
+}
+
+
+
+
+
+ 
+#order-button:hover {
+    transition: background-color 0.3s;
+    background-color: #72AAC0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-right: auto;
+}
+
+
+.logo img{
+  height: 80px;
+  border-radius: 40px 0 40px 0;
+  box-shadow: 3px 2px 10px rgba(0, 0, 0,0.5);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+
+footer img{
+  height: 80px;
+  border-radius: 20px 0 20px 0;
+  box-shadow: 3px 2px 10px rgba(0, 0, 0,0.5);
+}
+#nav-menu a:hover {
+  color: #FFA500; 
+}
+#nav-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+#nav-menu a {
+  text-decoration: none; 
+  color: black;
+}
+#nav-menu li {
+  margin: 0 15px;
+  font-size: 1.2rem;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  text-transform: uppercase;
+} 
+.menu-hide,
+.menu-show {
+    display: none;
+    background-color: white;
+    border: black;
+    margin: .5rem 0 0 .5rem;
+    border-radius: 5px;
+}
+.menu-hide, .menu-show{
+  display: none;
+  background-color: black;
+  color: white;
+  border: 2px solid rgb(20, 13, 13);
+  margin: .5rem 0 0 .5rem;
+  width: 50px;
+  height: 50px;
+  font-size: 2rem;
+}
+.menu-hide.showing,
+.menu-show.showing {
+    display: block;
+}
+
+#nav-menu{
+    display: none;
+}
+
+#nav-menu.showing {
+    display: block;
+}
+
+.social-media {
+ display: flex;
+ justify-content: center;
+ gap: 10px;
+ margin-top: 20px;
+}
+
+.social-media a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.logo h1{
+  text-align: center;
+}
+
+.menu-show{
+  display: none;
+}
+header{
+  background-color: #72AAC0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+h1{ 
+  text-align: center;
+}
+.button-Container{
+  position: absolute;
+  bottom: 50%;
+  top: auto;
+  right: 30%;
+  font-size: 20px;
+  border-radius: 5px;
+  z-index: 1; /* Set a higher z-index to ensure it appears above other elements */
+
+}
+
+#drink-count {
+  text-align: center;
+  padding: 20px 0;
+  border: 1px solid #72AAC0; 
+}
+.about-content img {
+  width: 45%; 
+  /* height: auto; */
+  border-radius: 10px; 
+} 
+.about-content{
+  display: flex;
+  justify-content: space-between;
+}
+.about-content p{
+  width: 50%;
+}
+#carlsbad-california{
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) ;
+  border-radius: 10px;
+}
+#weather{
+  padding: 10px;
+  box-shadow:   0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+#forecastSection {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #72AAC0;
+  color: black;
+  padding: 20px;
+}
+
+footer a {
+  color: black;
+  text-decoration: none;
+}
+
+.footer-content {
+  display: grid;
+  /* justify-content: space-between; */
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  width: 100%;
+  justify-items: center;
+}
+
+.footer-logo,
+.footer-contact,
+.social-media {
+  flex: 1;
+}
+
+.footer-logo {
+  text-align: left;
+}
+
+.footer-contact {
+  text-align: center;
+}
+
+.social-media {
+  text-align: right;
+}
+
+.social-media a img {
+  height: 30px;
+  width: 30px;
+}
+
+.footer-base {
+  border-top: 1px solid black;
+  margin-top: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+footer a:hover {
+  color: #FFA500; 
+}
+
+.reviews-content {
+  display: flex; 
+  justify-content: space-between; 
+}
+.review-card {
+  border: 1px solid #72AAC0; 
+  padding: 20px;
+  width: 45%; 
+  box-sizing: border-box;
+  border-radius: 10px; 
+}
+
+.review-card img {
+  width: 100%; 
+  height: auto; 
+  object-fit: cover; 
+}
+/* Style for the first image inside the review cards */
+.review-card img:first-child {
+  max-height: 200px; 
+  width: 50%; 
+  object-fit: cover; 
+}
+
+.review-card img {
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto; 
+}
+
+#reviews h2{
+  font-size: 2rem;
+  text-align: center;
+}
+
+
+/* about section */
+.about-section {
+  padding: 30px;
+  text-align: center;
+}
+.about-section p {
+  font-weight: 300;
+  font-size: 24px;
+  margin: 20px 0;
+}
+.smoothie-image {
+  float: left; 
+  width: 300px; 
+  height: 300px; 
+  margin: 10px; 
+}
+
+/* mission section */
+.mission-section {
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) ;
+  border-radius: 10px;
+}
+.mission-section h2 {
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  margin: 0;
+}
+
+.mission-section p {
+  font-weight: 300;
+  font-size: 18px;
+  margin: 20px 0;
+  line-height: 1.5;
+}
+
+.mission-section ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+.mission-section li {
+  width: 25%;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.mission-section li:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  color: red;
+}
+
+/* products section */
+.products-section {
+  padding: 50px;
+  margin: 0 auto;
+}
+.product-section h2  {
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+}
+
+.product-section p  {
+  font-weight: 300;
+  font-size: 18px;
+  margin: 20px 0;
+  line-height: 1.5;
+  text-align: center;
+
+}
+
+/* map section */
+.map-section {
+  padding: 20px;
+}
+.map-section h2 {
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  margin: 0;
+}
+
+.map-section p {
+  font-weight: 300;
+  font-size: 18px;
+  margin: 20px 0;
+  text-align: center;
+  line-height: 1.5;
+  font-family: Bricolage Grotesque;
+}
+#google-map{
+  padding: 1rem;
+  width: 100%;
+} 
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+ 
+  .mission-section li {
+    width: 50%;
+  }
+  /* #order-button {
+    top: 80%;
+    left: 80%;
+    transform: translate(-80%, -80%);
+    
+  } */
+  #order-button {
+    bottom: 50%;
+    right: 50%;
+    margin: 0;
+  
+}
+}
+
+
+  
+ 
+ 
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
